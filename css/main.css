@@ -1,0 +1,174 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    -webkit-background-size:cover;
+    background-size:cover;
+
+    height: 1000px;
+
+    margin: 0;
+    background: black url("../img/background.jpg") no-repeat center;
+
+    position: relative;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .center-container {
+    width: 1100px;
+    display: block;
+    padding-top: 150px;
+    position: relative;
+}
+
+p.title {
+    color: white;
+    float: left;
+    margin: 0;
+    font-family: "Ubuntu Mono", serif;
+}
+
+div.logo {
+    width: 110px;
+    border:solid 8px white;
+    display: block;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+
+    -webkit-transition: all 0.5s;
+}
+
+div.logo img {
+    margin: 20px;
+}
+
+div.logo:hover {
+    opacity: 1;
+}
+
+h1.title {
+    top: 540px;
+    color: white;
+    font-size: 110px;
+    line-height: 110px;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+    header .center-container {
+        width: auto;
+    }
+
+    h1.title {
+        top: 430px;
+    }
+}
+
+/**/
+
+.vertical-line {
+    right: 37px;
+    background-color: white;
+    opacity: 0.2;
+    top: 260px;
+    width: 2px;
+    height: 860px;
+    display: block;
+    position: absolute;
+}
+
+header .number {
+    color: white;
+    font-family: "Lucida Console", serif;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 18px;
+    position: absolute;
+    top: 190px;
+}
+
+
+/* Navigate Bar*/
+.navigation {
+    right: 30px;
+    transition: all 3s;
+    position: fixed;
+    top: 300px;
+    width: 16px;
+    z-index: 100;
+}
+.navigation a {
+    display: block;
+    margin-bottom: 10px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0);
+
+    transition: all 0.3s;
+}
+
+.navigation a span {
+    display: block;
+    background: rgba(255,255,255,0.2);
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+    border-radius: 100%;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    border: rgba(255, 255, 255, 0.7) solid 2px;
+}
+
+
+/* second-part*/
+div.third-part,
+div.second-part {
+    background: url("../img/background.jpg") center no-repeat;
+    -webkit-background-size:cover;
+    background-size:cover;
+
+    height: 1000px;
+
+    padding-top: 200px;
+}
+
+div.second-part .container {
+    position: relative;
+    height: 600px;
+}
+
+div.rectangle {
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 10px solid white;
+    width: 245px;
+    height: 0;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.second-part-active div.rectangle {
+    height: 500px;
+    opacity: 1;
+}
