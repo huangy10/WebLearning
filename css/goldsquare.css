@@ -1,0 +1,30 @@
+div {
+    display: block;
+}
+
+header {
+    position: relative;
+    display: block;
+}
+
+div.logo {
+    position: relative;
+    left: 0;
+    right: 0;
+
+    width: 150px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+div.logo img {
+    width: 150px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+/* nav bar*/
+.navigation li {
+    list-style-type: None;
+    display: inline;
+}
